@@ -26,3 +26,14 @@ prev.addEventListener("click", function() {
 next.addEventListener("click", function() {
     sildeImage(true);
 });
+
+let items = document.querySelectorAll('.paralax-item');
+document.addEventListener("scroll", function(event) {
+    items.forEach(item => {
+        if((item.offsetTop - window.scrollY) < -400){
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+});
