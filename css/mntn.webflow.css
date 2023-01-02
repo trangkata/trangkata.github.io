@@ -1073,10 +1073,10 @@ button.slick-arrow {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
-  color: #000000;
+  color: #00000000;
   border: none;
   background: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
   width: 50px;
   height: 50px;
   border-radius: 4px;
@@ -1085,6 +1085,11 @@ button.slick-arrow {
   justify-content: center;
   line-height: 0;
   display: flex !important;
+}
+
+.collection-silde-border:hover button.slick-arrow {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 button.slick-arrow.slick-prev {
